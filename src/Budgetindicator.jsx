@@ -1,5 +1,5 @@
 import React from 'react'
-import './DashBoard.css';
+import './Dashboard.css';
 export const Budgetindicator = (props) => {
   const width=props.percentage+ "%";
   const st={

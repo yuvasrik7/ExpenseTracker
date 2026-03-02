@@ -1,5 +1,5 @@
 import React from 'react'
-import './DashBoard.css';
+import './Dashboard.css';
 export const Dashcard = (props) => {
     let name=props.name;
     let amt=props.amt;
