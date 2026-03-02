@@ -1,0 +1,49 @@
+.wholepage
+{
+    width:100%;
+    height:100vh;
+    background-image: url("https://media1.tenor.com/m/Y24PFIZnVOEAAAAd/sky-orange.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+
+
+}
+.loginbox
+{
+    background-color:  #fff7ed;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    padding:13px;
+    border-radius: 10px;
+    width:400px;
+    height:450px;
+
+}
+.loginbox input{
+    padding:8px;
+    box-shadow: 0px 4px 8px( #f9cd96);
+    margin:10px;
+    width:90%;
+
+}
+.loginbox input:hover{
+    
+    border:1px solid  #fbdebc;
+     box-shadow: 0px 4px 8px( #5b4d3b);
+}
+.loginbox button{
+    background-color: #f39624;
+    color:whitesmoke;
+    width:100%;
+    border: none;
+    height:35px;
+   font-weight: 510;
+    border-radius:10px;
+}
+.loginbox button:hover{
+    background-color:#faa843 ;
+    box-shadow: 0px 2px 8px #886f50;
+}

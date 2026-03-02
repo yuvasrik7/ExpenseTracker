@@ -1,0 +1,285 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin-left:0;
+ 
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 24
+}
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;        /* IMPORTANT when using position: fixed */
+  padding-left:20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;  /* optional but recommended */
+
+ background-color: #f9dac4b8;
+ height:9%;
+
+  margin: 0;
+ 
+ 
+}
+.link{
+    text-decoration: none;
+    color: #f97316;
+}
+.link:hover{
+    color:white;
+}
+.nav p{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    align-items: center;
+}
+.nav
+{
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    column-gap: 30px;
+   
+}
+.header h3
+{
+    font-size: 22px;
+    color: #f97316;
+}
+.nav p{
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+}
+.seg1
+{
+   display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 20px;
+     margin-bottom:30px;
+     margin-top:85px;
+     background: linear-gradient(to right,#be7221ee,#fdc07e,#fff3e5);
+
+}
+.addexpense
+{
+    margin-left: auto;
+    margin-right: 20px;
+    background: #f9600e;
+    border-radius: 10px;
+    color: white;
+    padding:8px 10px;
+   
+}
+.export
+{
+     margin-left:10px;
+    margin-right: 20px;
+    background: #f9600e;
+    border-radius: 10px;
+    color: white;
+    padding:8px 10px;
+  border: none;
+    font-size: 1rem;
+
+}
+.addexpense:hover,.export:hover{
+    background-color:  #fdba74;
+}
+.header p:hover{
+    background-color:#fdba74;
+    color:white ;
+    padding:4px;
+    border-radius:10px;
+}
+.cards
+{
+    display:flex;
+    flex-direction: rows;
+    column-gap: 20px;
+    place-content: center;
+    transition:transform 2s ease-in;
+}
+.cardeach:hover{
+    transform: translateY(-10px);
+}
+
+.cardstyle
+{
+   
+    width:280px;
+    height:150px;
+    padding-left: 20px;
+    border-radius: 10px;
+    box-shadow:  0px 4px 8px rgba(202, 202, 202, 0.58);
+   align-items: center;
+}
+.indicator
+{
+    background:  #f5e6d4;
+    height: 10px;
+    width:100hv;
+    margin:0 10px;
+    border-radius: 10px;
+
+}
+.indicator1
+{
+    background-color: #fe852e;
+}
+.budgetindicator
+{
+   border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(202, 202, 202, 0.58);
+    padding:20px;
+}
+/* .modal
+{
+    width:40%;
+    height:75%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  box-shadow: 0px 4px 8px rgba(143, 143, 143, 0.872);
+
+} */
+ .modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalBox {
+  background: white;
+  padding: 20px;
+  width: 400px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height:600px;
+}
+
+.modalBox input,.budgetModal input {
+  padding: 7px;
+  font-size: 14px;
+  border-radius: 5px;
+  border:0.5px solid #333;
+}
+.modalBox input:hover , .budgetModal input:hover{
+    box-shadow: 2px 2px 8px rgb(184, 184, 184);
+}
+.modalBox label ,.budgetModal{
+    color:#fe852e;
+    font-weight: 500;
+}
+.body
+{
+    margin-top: 0; /* !important */
+}
+.modalBox button, .budgetModal button {
+  padding: 10px;
+  cursor: pointer;
+}
+.modalOverlay h2{
+    color:#fe852e;
+}
+.modalOverlay button , .divbudget button{
+    background-color: #fe852e;
+    border: none;
+    border-radius: 10px;
+    color:white;
+}
+.modalOverlay button:hover ,.divbudget button:hover{
+    background-color:#ff974c;
+    box-shadow: 2px 2px 8px rgb(132, 131, 132);;
+}
+.recentexpenses {
+  margin-top: 30px;
+  margin-left:10px;
+  margin-right:10px;
+  box-shadow: 0px 4px 8px rgba(202, 202, 202, 0.58);
+  padding:10px;
+}
+
+.expenseItem {
+  display: flex;
+  justify-content: space-between;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(232, 231, 231, 0.58) ;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+
+}
+.item2
+{
+    display: flex;
+    align-items: center;
+   
+}
+.item11
+{
+    display: flex;
+    column-gap: 8px;;
+align-items: center;
+}
+
+.card-icon {
+  display:flex;
+  flex-direction: row;
+  column-gap: 3px;
+  place-content: space-between;
+  padding-right: 10px;
+ 
+}
+
+.divbudget
+{
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.budgetModal
+{
+    background: white;
+  padding: 20px;
+  width: 350px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height:250px;
+}
+.googleBtn {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
