@@ -198,11 +198,10 @@ useEffect(() => {
   console.log(USER_DOC_ID);
   const remainingBalance = monthlyBudget - totalExpenses;
 
-  const percentage =
-    monthlyBudget > 0
-      ? Math.floor((totalExpenses / monthlyBudget) * 100)
-      : 0;
-
+ const percentage =
+  monthlyBudget > 0
+    ? Math.min(Math.floor((totalExpenses / monthlyBudget) * 100), 100)
+    : 0;
   const head = {
     fontWeight: "bold",
     fontSize: "16px",
