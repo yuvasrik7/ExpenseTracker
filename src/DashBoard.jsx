@@ -122,27 +122,24 @@ const exportToPDF = () => {
 
   doc.save("Expense_Report.pdf");
 };
-
-
-
-  // ✅ FIX 4: Run Firestore ONLY after UID exists
- useEffect(() => {
-  if (!user) return;
+useEffect(() => {
+  if (!USER_DOC_ID) return;
 
   const checkBudget = async () => {
     const docRef = doc(db, "users", USER_DOC_ID, "monthlyBudget", monthKey);
     const snap = await getDoc(docRef);
 
     if (!snap.exists()) {
-  setMonthChange(true);
-} else {
-  setMonthlyBudget(snap.data().budget);
-
-}
+      setMonthChange(true);
+    } else {
+      const data = snap.data();
+      console.log("Budget data:", data);
+      setMonthlyBudget(Number(data.budget) || 0);
+    }
   };
 
   checkBudget();
-}, [user, monthKey]);// ✅ important dependency
+}, [USER_DOC_ID, monthKey]);
 console.log(monthKey);
 useEffect(() => {
   if (!USER_DOC_ID) return;
