@@ -197,7 +197,7 @@ useEffect(() => {
 
  const percentage =
   monthlyBudget > 0
-    ? Math.min(Math.floor((totalExpenses / monthlyBudget) * 100), 100)
+    ? Math.min((totalExpenses / monthlyBudget) * 100, 100)
     : 0;
     console.log("percentage"+percentage);
   const head = {
